@@ -12,34 +12,27 @@ bot.use(session.middleware());
 
 const models = {
   text: {
-    'meta_llama': {
-      displayName: '🦙 Meta Llama 3.1 8B',
-      apiModelName: 'meta-llama/Meta-Llama-3.1-8B-Instruct',
-      maxTokens: 2048,
+    'deephermeslama': {
+      displayName: '🦙 DeepHermes-3-Llama-3-8B-Preview',
+      apiModelName: 'hosted_vllm/NousResearch/DeepHermes-3-Llama-3-8B-Preview',
+      maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
     },
-    'deepseek': {
-      displayName: '🔍 DeepSeek V3',
-      apiModelName: 'deepseek-ai/DeepSeek-V3',
-      maxTokens: 512,
-      temperature: 0.1,
+    'deephermesmistral': {
+      displayName: 'DeepHermes-3-Mistral-24B-Preview',
+      apiModelName: 'hosted_vllm/NousResearch/DeepHermes-3-Mistral-24B-Preview',
+      maxTokens: 256,
+      temperature: 0.7,
       topP: 0.9
     },
     'hermes': {
       displayName: '⚡ Hermes-3-Llama-3.1-70B',
-      apiModelName: 'NousResearch/Hermes-3-Llama-3.1-70B',
-      maxTokens: 2048,
+      apiModelName: 'hosted_vllm/NousResearch/Hermes-3-Llama-3.1-70B',
+      maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
     },
-    'qwen': {
-      displayName: '💻 Qwen2.5-Coder-32B-Instruct',
-      apiModelName: 'Qwen/Qwen2.5-Coder-32B-Instruct',
-      maxTokens: 512,
-      temperature: 0.1,
-      topP: 0.9
-    }
   },
   image: {
     'flux': {
@@ -64,8 +57,6 @@ function showCategorySelection(ctx) {
     reply_markup: {
       inline_keyboard: [
         [{ text: '📝 Text Models', callback_data: 'category_text' }],
-        [{ text: '🖼️ Image Models', callback_data: 'category_image' }],
-        [{ text: '🎧 Audio Models', callback_data: 'category_audio' }]
       ]
     }
   });
@@ -142,7 +133,7 @@ async function handleModelInput(ctx, input) {
   else if (category === 'audio') await ctx.sendChatAction('upload_voice');
 
   if (category === 'text') {
-    url = "https://api.hyperbolic.xyz/v1/chat/completions";
+    url = "https://inference-api.nousresearch.com/v1/chat/completions";
     data = {
       messages: [{ role: "user", content: input }],
       model: modelInfo.apiModelName,
