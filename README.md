@@ -2,7 +2,7 @@
 
 First off, I copied most of this from [zunxbt](https://x.com/Zun2025) so you better go follow him, star his git, thank him for being such a great guy and whatever else you can do to show appreciation for what he provides to us degens: [zun git](https://github.com/zunxbt). 
 
-Please star [this repo](https://github.com/bpinnyc/nous-bot), follow [my git](https://github.com/bpinnyc) and give me a follow on X if you find this helpful: [bp](https://x.com/bp__)
+Please star [this repo](https://github.com/bpinnyc/nous-bot), follow [my git](https://github.com/bpinnyc) and give me a follow on X if you find this helpful: [bp](https://x.com/bp__). I think you should also try out Nous' worldsim models. I did [a short thread on how to access them](https://x.com/bp__/status/1916455131278626853).
 
 This bot is a feature-rich Telegram bot integrating Nous Research's AI models for text generation, image creation, and audio synthesis.
 
