@@ -253,6 +253,7 @@ bot.command('help', (ctx) => {
 bot.on('text', async (ctx) => {
   if (!ctx.session.apiKey) {
     ctx.session.apiKey = ctx.message.text;
+    console.log('API Key saved:', ctx.session.apiKey); 
     ctx.reply('✅ *API key saved!*', { parse_mode: 'Markdown' });
     showCategorySelection(ctx);
   } else if (ctx.session.selectedModel) {
@@ -275,6 +276,7 @@ bot.on('callback_query', async (ctx) => {
     } else if (data.startsWith('model_')) {
       const modelKey = data.replace('model_', '');
       ctx.session.selectedModel = modelKey;
+      console.log('Model selected:', modelKey);
       const modelInfo = getModelInfo(modelKey);
       await ctx.reply(`🎯 Selected: ${modelInfo.displayName}`);
     }
