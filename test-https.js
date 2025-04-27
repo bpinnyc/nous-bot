@@ -1,10 +1,10 @@
 const https = require('https');
 
 const options = {
-  hostname: 'api.nous.ai',
+  hostname: 'inference-api.nousresearch.com',  // ✅ the correct hostname
   port: 443,
-  path: '/',
-  method: 'GET'
+  path: '/v1/chat/completions',                // ✅ a real path (even if you get 400 later)
+  method: 'GET'                                // GET is fine for a quick test
 };
 
 const req = https.request(options, res => {
