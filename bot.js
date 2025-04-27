@@ -14,21 +14,21 @@ const models = {
   text: {
     'deephermeslama': {
       displayName: '🦙 DeepHermes-3-Llama-3-8B-Preview',
-      apiModelName: 'hosted_vllm/NousResearch/DeepHermes-3-Llama-3-8B-Preview',
+      apiModelName: 'NousResearch/DeepHermes-3-Llama-3-8B-Preview',
       maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
     },
     'deephermesmistral': {
       displayName: 'DeepHermes-3-Mistral-24B-Preview',
-      apiModelName: 'hosted_vllm/NousResearch/DeepHermes-3-Mistral-24B-Preview',
+      apiModelName: 'NousResearch/DeepHermes-3-Mistral-24B-Preview',
       maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
     },
     'hermes': {
       displayName: '⚡ Hermes-3-Llama-3.1-70B',
-      apiModelName: 'hosted_vllm/NousResearch/Hermes-3-Llama-3.1-70B',
+      apiModelName: 'Hermes-3-Llama-3.1-70B',
       maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
