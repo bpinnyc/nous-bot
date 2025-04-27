@@ -1,6 +1,10 @@
 # nous-bot
 
-First off, I copied most of this from zunxbt so you better go follow him, star his git, thank him for being such a great guy and whatever else you can do to show appreciation for what he provides to us degens: [zun git](https://github.com/zunxbt). This bot is a feature-rich Telegram bot integrating Nous Research's AI models for text generation, image creation, and audio synthesis.  ONE PROBLEM THOUGH -- I CAN'T GET THE API TO WORK YET. IF YOU KNOW WHY TELL ME.
+First off, I copied most of this from zunxbt so you better go follow him, star his git, thank him for being such a great guy and whatever else you can do to show appreciation for what he provides to us degens: [zun git](https://github.com/zunxbt). 
+
+Please star this repo, follow my git and give me a follow on X if you find this helpful: [bp](https://x.com/bp__)
+
+This bot is a feature-rich Telegram bot integrating Nous Research's AI models for text generation, image creation, and audio synthesis.
 
 ## 📋 Prerequisites
 - Node.js v16+ 
