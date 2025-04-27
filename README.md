@@ -7,7 +7,7 @@ Please star [this repo](https://github.com/bpinnyc/nous-bot), follow [my git](ht
 This will setup a Telegram bot integrating Nous Research's AI models for text generation.
 
 ## 📋 Prerequisites
-- Node.js v16+ 
+- Node.js
 - npm/yarn
 - Telegram account & bot token
 - [Nous API Key](https://portal.nousresearch.com/login) - sign up, may have to wait a bit to get approved for access.
