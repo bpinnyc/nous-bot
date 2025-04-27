@@ -10,7 +10,7 @@ This bot is a feature-rich Telegram bot integrating Nous Research's AI models fo
 - Node.js v16+ 
 - npm/yarn
 - Telegram account & bot token
-- Nous API Key
+- [Nous API Key](https://portal.nousresearch.com/login) - sign up, may have to wait a bit to get approved for access.
 
 ## 📥 Installation
 1. **Install Node.js and npm if not installed already**
