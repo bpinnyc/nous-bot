@@ -133,7 +133,7 @@ async function handleModelInput(ctx, input) {
   else if (category === 'audio') await ctx.sendChatAction('upload_voice');
 
   if (category === 'text') {
-    url = "https://api.nous.ai/v1/chat/completions";
+    url = "https://inference-api.nousresearch.com/v1/chat/completions";
     data = {
       messages: [{ role: "user", content: input }],
       model: modelInfo.apiModelName,
