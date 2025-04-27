@@ -14,14 +14,14 @@ const models = {
   text: {
     'deephermeslama': {
       displayName: '🦙 DeepHermes-3-Llama-3-8B-Preview',
-      apiModelName: 'NousResearch/DeepHermes-3-Llama-3-8B-Preview',
+      apiModelName: 'DeepHermes-3-Llama-3-8B-Preview',
       maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
     },
     'deephermesmistral': {
       displayName: 'DeepHermes-3-Mistral-24B-Preview',
-      apiModelName: 'NousResearch/DeepHermes-3-Mistral-24B-Preview',
+      apiModelName: 'DeepHermes-3-Mistral-24B-Preview',
       maxTokens: 256,
       temperature: 0.7,
       topP: 0.9
@@ -133,7 +133,7 @@ async function handleModelInput(ctx, input) {
   else if (category === 'audio') await ctx.sendChatAction('upload_voice');
 
   if (category === 'text') {
-    url = "https://inference-api.nousresearch.com/v1/";
+    url = "https://inference-api.nousresearch.com/v1";
     data = {
       messages: [{ role: "user", content: input }],
       model: modelInfo.apiModelName,
