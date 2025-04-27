@@ -4,7 +4,7 @@ First off, I copied most of this from [zunxbt](https://x.com/Zun2025) so you bet
 
 Please star [this repo](https://github.com/bpinnyc/nous-bot), follow [my git](https://github.com/bpinnyc) and give me a follow on X if you find this helpful: [bp](https://x.com/bp__). I think you should also try out Nous' worldsim models. I did [a short thread on how to access them](https://x.com/bp__/status/1916455131278626853).
 
-This bot is a feature-rich Telegram bot integrating Nous Research's AI models for text generation, image creation, and audio synthesis.
+This bot is a feature-rich Telegram bot integrating Nous Research's AI models for text generation.
 
 ## 📋 Prerequisites
 - Node.js v16+ 
